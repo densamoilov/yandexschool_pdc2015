@@ -1,0 +1,7 @@
+#PBS -N mpi_life
+#PBS -l nodes=8:ppn=8
+#PBS -j oe
+cd $PBS_O_WORKDIR
+
+mpiexec ./life 16000 1600.dat 10 output
+
